@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>PowerCalculator By AnecFox</title>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-light.css" id="theme-link" rel="stylesheet">
+</head>
+<body>
+<header>
+    <button id="github-button" onclick="window.open('https://github.com/AnecFox/PwrCalc', '_blank')"></button>
+    <h1 class="title">PwrCalc</h1>
+    <button id="theme-button"></button>
+</header>
+<div class="container">
+    <p>Напряжение</p>
+    <label>
+        <input id="voltage-input" placeholder="V" type="number">
+    </label>
+    <br>
+
+    <p>Ток</p>
+    <label>
+        <input id="current-input" placeholder="A" type="number">
+    </label>
+
+    <p>Мощность</p>
+    <label>
+        <input id="power-input" placeholder="W" type="number">
+    </label>
+    <br>
+
+    <button class="action-buttons" onclick="calculate()">Вычислить</button>
+    <button class="action-buttons" onclick="clearAll()">Очистить</button>
+</div>
+
+<footer>alpha 0.1.1</footer>
+
+<script src="theme.js"></script>
+<script src="power-calc.js"></script>
+</body>
+</html>

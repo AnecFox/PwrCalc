@@ -1,0 +1,30 @@
+body {
+    background-color: #ffffff;
+    color: #111111;
+    transition: background-color 0.5s ease;
+}
+
+footer {
+    color: #9b9b9b;
+}
+
+.title {
+    color: #7db066;
+}
+
+input {
+    border: gray solid 2px;
+}
+
+button {
+    background-color: #e8e8e8;
+    transition: color 0.5s ease;
+}
+
+#github-button {
+    background-image: url("../icons/github-mark.png");
+}
+
+#theme-button {
+    background-image: url("../icons/light-theme-icon.png");
+}
