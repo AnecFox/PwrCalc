@@ -6,7 +6,7 @@ function calculate() {
     if ((voltageInput.value === "" && currentInput.value === "" && powerInput.value === "") ||
         (voltageInput.value !== "" && currentInput.value !== "" && powerInput.value !== "")
     )
-        return alert("Мяу! Тут нужно ввести два параметра, и рассчитается третий");
+        return alert("Тут нужно ввести два параметра и рассчитается третий, тот, который не введён");
 
     if (voltageInput.value === "") {
         voltageInput.value = calculateVoltage(powerInput.value, currentInput.value).toFixed(2);
