@@ -28,3 +28,11 @@ button {
 #theme-button {
     background-image: url("../icons/light-theme-icon.png");
 }
+
+.dropdown-menu {
+    background-color: #fff;
+}
+
+.dropdown-menu a {
+    color: #111111;
+}

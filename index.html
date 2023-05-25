@@ -11,7 +11,16 @@
 <header>
     <button id="github-button" onclick="window.open('https://github.com/AnecFox/PwrCalc', '_blank')"></button>
     <h1 class="title">PwrCalc</h1>
-    <button id="theme-button"></button>
+    <div class="theme-container">
+        <button id="theme-button" onclick="showDropdown()"></button>
+        <div class="dropdown-menu" id="theme-dropdown">
+            <strong>Выбор темы</strong>
+            <hr>
+            <a data-theme="system" href="#" onclick="setTheme('system')">Системная</a>
+            <a data-theme="light" href="#" onclick="setTheme('light')">Светлая</a>
+            <a data-theme="dark" href="#" onclick="setTheme('dark')">Тёмная</a>
+        </div>
+    </div>
 </header>
 <div class="container">
     <p>Напряжение</p>
@@ -35,7 +44,7 @@
     <button class="action-buttons" onclick="clearAll()">Очистить</button>
 </div>
 
-<footer>alpha 0.1.1</footer>
+<footer>alpha 0.2.0</footer>
 
 <script src="theme.js"></script>
 <script src="power-calc.js"></script>

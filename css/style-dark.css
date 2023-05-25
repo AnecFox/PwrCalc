@@ -31,3 +31,11 @@ button {
 #theme-button {
     background-image: url("../icons/dark-theme-icon.png");
 }
+
+.dropdown-menu {
+    background-color: #242424;
+}
+
+.dropdown-menu a {
+    color: #f4f4f4;
+}
