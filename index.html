@@ -3,16 +3,20 @@
 <head>
     <title>PowerCalculator By AnecFox</title>
     <meta charset="utf-8">
+    <meta content="Калькулятор для вычисления мощности: напряжение, ток и мощность." name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-light.css" id="theme-link" rel="stylesheet">
+    <script src="theme.js" defer></script>
+    <script src="power-calc.js" defer></script>
 </head>
 <body>
 <header>
-    <button id="github-button" onclick="window.open('https://github.com/AnecFox/PwrCalc', '_blank')"></button>
+    <button id="github-button" aria-label="GitHub" onclick="window.open('https://github.com/AnecFox/PwrCalc', '_blank')"></button>
     <h1 class="title">PwrCalc</h1>
     <div class="theme-container">
-        <button id="theme-button" onclick="showDropdown()"></button>
+        <button id="theme-button" aria-label="Сменить тему, отрыть меню" onclick="showDropdown()"></button>
         <div class="dropdown-menu" id="theme-dropdown">
             <strong>Выбор темы</strong>
             <hr>
@@ -27,7 +31,6 @@
     <label>
         <input id="voltage-input" placeholder="V" type="number">
     </label>
-    <br>
 
     <p>Ток</p>
     <label>
@@ -38,15 +41,13 @@
     <label>
         <input id="power-input" placeholder="W" type="number">
     </label>
-    <br>
 
-    <button class="action-buttons" onclick="calculate()">Вычислить</button>
-    <button class="action-buttons" onclick="clearAll()">Очистить</button>
+    <div class="button-container">
+        <button class="action-button" style="margin-right: 10px;" onclick="calculate()">Вычислить</button>
+        <button class="action-button" onclick="clearAll()">Очистить</button>
+    </div>
 </div>
 
 <footer>beta 0.1.2</footer>
-
-<script src="theme.js"></script>
-<script src="power-calc.js"></script>
 </body>
 </html>
