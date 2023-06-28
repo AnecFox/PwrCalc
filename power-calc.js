@@ -9,11 +9,11 @@ function calculate() {
         return alert("Тут нужно ввести два параметра и рассчитается третий, тот, который не введён");
 
     if (voltageInput.value === "") {
-        voltageInput.value = calculateVoltage(powerInput.value, currentInput.value).toFixed(2);
+        voltageInput.value = +(calculateVoltage(powerInput.value, currentInput.value).toFixed(2));
     } else if (currentInput.value === "") {
-        currentInput.value = calculateCurrent(powerInput.value, voltageInput.value).toFixed(2);
+        currentInput.value = +(calculateCurrent(powerInput.value, voltageInput.value).toFixed(2));
     } else if (powerInput.value === "") {
-        powerInput.value = calculatePower(voltageInput.value, currentInput.value).toFixed(2);
+        powerInput.value = +(calculatePower(voltageInput.value, currentInput.value).toFixed(2));
     }
 }
 
