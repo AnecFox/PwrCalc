@@ -3,10 +3,10 @@ const currentInput = document.getElementById("current-input");
 const powerInput = document.getElementById("power-input")
 
 function calculate() {
-    if ((voltageInput.value === "" && currentInput.value === "" && powerInput.value === "") ||
-        (voltageInput.value !== "" && currentInput.value !== "" && powerInput.value !== "")
-    )
-        return alert("Тут нужно ввести два параметра и рассчитается третий, тот, который не введён");
+    let values = [voltageInput.value, currentInput.value, powerInput.value];
+    let emptyValuesCount = values.filter(isEmpty).length;
+
+    if (emptyValuesCount !== 1) return alert("Тут нужно ввести только два параметра и рассчитается третий, тот, который не введён");
 
     if (voltageInput.value === "") {
         voltageInput.value = +(calculateVoltage(powerInput.value, currentInput.value).toFixed(2));
@@ -15,6 +15,10 @@ function calculate() {
     } else if (powerInput.value === "") {
         powerInput.value = +(calculatePower(voltageInput.value, currentInput.value).toFixed(2));
     }
+}
+
+function isEmpty(value) {
+    return value === "";
 }
 
 function calculateVoltage(power, current) {

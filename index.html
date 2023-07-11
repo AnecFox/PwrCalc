@@ -8,15 +8,16 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-light.css" id="theme-link" rel="stylesheet">
-    <script src="theme.js" defer></script>
-    <script src="power-calc.js" defer></script>
+    <script defer src="theme.js"></script>
+    <script defer src="power-calc.js"></script>
 </head>
 <body>
 <header>
-    <button id="github-button" aria-label="GitHub" onclick="window.open('https://github.com/AnecFox/PwrCalc', '_blank')"></button>
+    <button aria-label="GitHub" id="github-button"
+            onclick="window.open('https://github.com/AnecFox/PwrCalc', '_blank')"></button>
     <h1 class="title">PwrCalc</h1>
     <div class="theme-container">
-        <button id="theme-button" aria-label="Сменить тему, отрыть меню" onclick="showDropdown()"></button>
+        <button aria-label="Сменить тему, отрыть меню" id="theme-button" onclick="showDropdown()"></button>
         <div class="dropdown-menu" id="theme-dropdown">
             <strong>Выбор темы</strong>
             <hr>
@@ -43,11 +44,11 @@
     </label>
 
     <div class="button-container">
-        <button class="action-button" style="margin-right: 10px;" onclick="calculate()">Вычислить</button>
+        <button class="action-button" onclick="calculate()" style="margin-right: 10px;">Вычислить</button>
         <button class="action-button" onclick="clearAll()">Очистить</button>
     </div>
 </div>
 
-<footer>beta 0.1.2</footer>
+<footer>beta 0.1.3</footer>
 </body>
 </html>
