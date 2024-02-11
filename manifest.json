@@ -1,0 +1,15 @@
+{
+    "background_color": "#565656",
+    "theme_color": "#6c9859",
+    "name": "PowerCalculator",
+    "short_name": "PwrCalc",
+    "display": "standalone",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ]
+}
