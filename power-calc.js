@@ -1,6 +1,6 @@
 const voltageInput = document.getElementById("voltage-input");
 const currentInput = document.getElementById("current-input");
-const powerInput = document.getElementById("power-input")
+const powerInput = document.getElementById("power-input");
 
 function calculate() {
     let values = [voltageInput.value, currentInput.value, powerInput.value];
